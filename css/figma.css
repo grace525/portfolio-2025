@@ -1,0 +1,209 @@
+
+html{
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+body{
+  height: 100%;
+  width: 100%;
+  adding: 0; /* Reset padding to 0 if needed */
+  margin: 0;/* Remove the default margin */
+  background: display: flex;
+/*  overflow: hidden;*/
+  background-color: #fafafa;
+
+}
+
+
+/*************************
+Color Pallete
+Aqua-Blue: #008CBA
+Dark Blue:  #210B2C;
+Champaign: #EEE0CB 
+Orange: #F34213;
+Grey is just color:  grey;
+**************************/
+
+/*header ------------------------------------------------------------------------------ */ 
+#flexboxcontainer{ /*Header (name/header navigation)*/
+  width:100%; /*The container will try to fill the entire browser window width*/
+  /*max-width:960px; /*the maximum width the container will grow to*/
+  margin:0px; /*This line of code is the key.  0px margin top and bottom, auto margin left and right to center*/
+  padding:0px;
+  box-sizing:border-box;/*Makes it so that padding does not add to a box's total width*/
+  display:flex;
+  flex-wrap:wrap; /*wrap, nowrap, wrap-reverse*/
+  flex-direction:row; /*row, row-reverse, column, column-reverse*/
+  align-content:flex-start; /*flex-start, flex-end, center, stretch, space-between, space around*/
+  align-items:stretch; /*flex-end, center, stretch, baseline*/
+/*  background: linear-gradient(to bottom, #cccca833 0%, #e1e1c833 90%, #00000000 100%);*/ /*slightly yellow but looks bad here*/
+}
+
+#name { /*Text styling of 'Grace Geer'*/
+  font-size: 200%;
+  font-family: forma-djr-display, sans-serif; /*Link to font: https://fonts.adobe.com/fonts/forma-djr-display#details-section+forma-djr-display-hairline*/
+  font-style: normal;
+  font-weight: 100;
+}
+
+.headercontainer{ /*Just contains my name (top left corner)*/
+  width: 20%; /* Set the container's width*/
+  display: flex; /* Use Flexbox for centering */
+  justify-content: center; /* Horizontally center text */
+  align-items: center; /* Vertically center text */
+}
+
+.buttoncontainer { /*Contains buttons, or links is what they are I suppose*/
+  width: 80%;
+  height: 100%;
+  display: flex; /* Use Flexbox for centering */
+  justify-content: left; /* Horizontally center text */
+  align-items: center; /* Vertically center text */
+}
+
+.background-gradient { /*Slight shadow at bottom of page*/
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 300px; /* Adjust the height as needed */
+  background: linear-gradient(to bottom, #00000000 0%, #ffffff, #f2f4f7 100%); /*basically white. A little blue/grey gradient at the bottom of the page*/
+  z-index: -1; /*Puts the gradient behind your other elements*/
+/*    background: linear-gradient(to bottom, #00000000 0%, #0000000d 30%, #00000012 100%);*/ /*simple grey*/
+/*    background: linear-gradient(to bottom, #00000000 0%, #008cba0f 30%, #006f9469 90%, #00678a7a 100%);*/ /*slightly blue*/
+}
+
+
+/* Link Styling ------------------------------------------------------------------------------ */
+
+/*Link Styling*/
+a:link {
+  color: grey;
+  text-decoration: none;
+  size: 5%;
+  font-family: helvetica, arial, sans-serif;
+  font-weight: bold;
+}
+
+a:visited {
+  color: grey;
+  text-decoration: none;
+  size: 5%;
+  font-family: helvetica, arial, sans-serif;
+}
+
+a:hover {
+  color: #008CBA;
+}
+
+/* Projects Styling ------------------------------------------------------------------------------ */
+h1{ /*Project Titles*/
+  font-size:150%; /*can do #pt or #em to change font size*/
+  font-family: forma-djr-display, sans-serif; /*Link to font: https://fonts.adobe.com/fonts/forma-djr-display#details-section+forma-djr-display-hairline*/
+  font-style: normal;
+  font-weight: 100;
+  margin-left: 2%;
+/*  text-align: center;*/
+}
+
+h2{ /*Project Titles*/
+  font-size:100%; /*can do #pt or #em to change font size*/
+  font-family: forma-djr-display, sans-serif; /*Link to font: https://fonts.adobe.com/fonts/forma-djr-display#details-section+forma-djr-display-hairline*/
+  font-style: normal;
+  font-weight: 100;
+    margin-left: 2%;
+/*    text-align: center;*/
+}
+
+p {
+  font-size:100%; /*can do #pt or #em to change font size*/
+  font-family: forma-djr-display, sans-serif; /*Link to font: https://fonts.adobe.com/fonts/forma-djr-display#details-section+forma-djr-display-hairline*/
+  font-style: normal;
+  font-weight: 100;
+  line-height: 150%;
+  margin: 2%;
+  padding: 2%;
+}
+
+#centerImages{
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  align-items: center;
+  /*padding: 2%;*/
+}
+
+#centerImages img{
+  max-height: 400px;
+  padding: 2%;
+}
+
+
+#centerImagesLarger{
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  align-items: center;
+  /*padding: 2%;*/
+}
+
+#centerImagesLarger img{
+  max-height: 500px;
+  padding: 2%;
+}
+
+
+#outerContainer {
+  display: flex; /* Makes child elements align in a row */
+  flex-direction: row; /* Ensures horizontal alignment */
+  justify-content: center; /* Optional: centers the child elements */
+  gap: 20px; /* Adds space between the children */
+    line-height: 150%;
+}
+
+#thirds {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  max-width: 100%; /* Limit the container's width */
+  justify-content: center;
+}
+
+#thirds img {
+  max-width: 50%; /* Scale the image width to fit the container */
+  height: auto;   /* Maintain the aspect ratio */
+  margin: 1%;     /* Add spacing around images */
+}
+
+.container1{ /*Holds the overall project*/
+  max-width: 50%; /*the maximum width the container will grow to
+  margin:0px; /*This line of code is the key.  0px margin top and bottom, auto margin left and right to center*/
+  padding: 0;
+  box-sizing:border-box;/*Makes it so that padding does not add to a box's total width*/
+  display:flex;
+  flex-wrap:wrap; /*wrap, nowrap, wrap-reverse*/
+  flex-direction:row; /*row, row-reverse, column, column-reverse*/
+  align-content:flex-start; /*flex-start, flex-end, center, stretch, space-between, space around*/
+/*  background: linear-gradient(to bottom, #cccca833 0%, #e1e1c833 90%, #00000000 100%);*/ /*slightly yellow but looks bad here*/
+
+}
+
+
+/* scroll to top button ------------------------------------------------------------------------------ */
+#backToTop {
+  position: relative;
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#backToTop:hover {
+  background-color: #005b87;
+}
+

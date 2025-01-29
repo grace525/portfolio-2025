@@ -1,0 +1,76 @@
+/*Background Color*/
+body{
+  height: 100%;
+  width: 100%;
+  adding: 0; /* Reset padding to 0 if needed */
+  margin: 0; /* Remove the default margin */
+  background-color: rgb(255, 255, 255)
+  display: flex;
+  background-color: #fafafa;
+}
+
+
+.headercontainer {
+	width: 100%;
+	background-color: rgb(225, 247, 242)
+}
+
+#flexboxcontainer{ /*A box that will contain the entire website for centering purposes*/
+  width:100%; /*The container will try to fill the entire browser window width*/
+  /*max-width:960px; /*the maximum width the container will grow to*/
+  height: 20%%;
+  margin:0px; /*This line of code is the key.  0px margin top and bottom, auto margin left and right to center*/
+  padding:0px;
+
+  box-sizing:border-box;/*Makes it so that padding does not add to a box's total width*/
+
+  display:flex;
+  flex-wrap:wrap; /*wrap, nowrap, wrap-reverse*/
+  flex-direction:row; /*row, row-reverse, column, column-reverse*/
+  align-content:flex-start; /*flex-start, flex-end, center, stretch, space-between, space around*/
+  align-items:stretch; /*flex-end, center, stretch, baseline*/
+/*  background-color:rgb(225,225,200);*/
+}
+
+#bggradient {
+  height: 100%;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(red, yellow);
+}
+/*Text Style*/
+h1{
+	font-size:40pt; /*can do #pt or #em to change font size*/
+	color:rgb(0,0,255);
+	font-family: helvetica, arial, sans-serif; /*include more fonts in case the user doesn't have your font downloaded. First one defaults*/
+}
+
+/* header Name css */
+#name {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 150%;
+  margin: 3%; /* Adjust the margin as needed to create space between your name and the page edges */
+}
+
+
+/* Buttons */
+
+.buttoncontainer {
+margin: 3%;
+}
+
+/*Link Styling*/
+a:link {
+  color: rgb(0,0, 0);
+  text-decoration: none;
+  size: 5%;
+  font-family: helvetica, arial, sans-serif;
+}
+
+a:visited {
+  color: rgb(0,0, 0);
+  text-decoration: none;
+  size: 5%;
+  font-family: helvetica, arial, sans-serif;
+}

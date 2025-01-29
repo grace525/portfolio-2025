@@ -1,0 +1,379 @@
+/*Home page css
+*/
+/*Background Color*/
+html{
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+body{
+  height: 100%;
+  width: 100%;
+  adding: 0; /* Reset padding to 0 if needed */
+  margin: 0;/* Remove the default margin */
+  background: display: flex;
+  background: #fafafa;
+/*  overflow: hidden;*/
+}
+
+
+/*************************
+Color Pallete
+Aqua-Blue: #008CBA
+Dark Blue:  #210B2C;
+Champaign: #EEE0CB 
+Orange: #F34213;
+Grey is just color:  grey;
+**************************/
+
+
+.welcomeContainer { /* Large intro block */
+  width: 100%;
+  height: 80vh;
+  border-radius: 20px;
+}
+
+.welcomeTextContainer { /* Align Text in Block */
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #210B2C;
+/*background: radial-gradient(#2F2452 30%, #000000 100%);*/
+/*background: radial-gradient(#325c9c 30%, #4068A5 100%); */
+/*  border-radius: 25px;*/
+box-shadow: 0 0 100px rgba(0, 0, 0, 0.9);
+
+}
+
+#welcomeTitle{ /* "Hi, I'm Grace." */
+  display: flex;
+  place-items: center;
+  position: relative;
+  font-size: 7vh;
+  color: white;
+/*  font-family: "pacifico", sans-serif;*/
+font-family: forma-djr-display, sans-serif; /*Link to font: https://fonts.adobe.com/fonts/forma-djr-display#details-section+forma-djr-display-hairline*/
+max-height: 25vh;
+text-shadow: -5px 5px 3px #000000;
+}
+
+#welcomeIntro{ /*"Hi I'm a designer"*/
+  display: flex;
+  place-items: center;
+  position: relative;
+  color: white;
+  font-size: 1.2em;
+}
+
+#flexboxcontainer{ /*A box that will contain the entire website for centering purposes*/
+  width:100%; /*The container will try to fill the entire browser window width*/
+  /*max-width:960px; /*the maximum width the container will grow to*/
+  margin:0px; /*This line of code is the key.  0px margin top and bottom, auto margin left and right to center*/
+  padding:0px;
+
+  box-sizing:border-box;/*Makes it so that padding does not add to a box's total width*/
+
+  display:flex;
+  flex-wrap:wrap; /*wrap, nowrap, wrap-reverse*/
+  flex-direction:row; /*row, row-reverse, column, column-reverse*/
+  align-content:flex-start; /*flex-start, flex-end, center, stretch, space-between, space around*/
+  align-items:stretch; /*flex-end, center, stretch, baseline*/
+/*  background: linear-gradient(to bottom, #cccca833 0%, #e1e1c833 90%, #00000000 100%);*/ /*slightly yellow but looks bad here*/
+}
+
+
+
+.background-gradient { /* The little 'shadow' at the bottom of the page*/
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 300px; /* Adjust the height as needed */
+  background: linear-gradient(to bottom, #00000000 0%, #ffffff, #f2f4f7 100%); /*basically white. A little blue/grey gradient at the bottom of the page*/
+  z-index: -1; /*Puts the gradient behind your other elements*/
+/*    background: linear-gradient(to bottom, #00000000 0%, #0000000d 30%, #00000012 100%);*/ /*simple grey*/
+/*        background: linear-gradient(to bottom, #00000000 0%, #008cba0f 30%, #006f9469 90%, #00678a7a 100%);*/ /*slightly blue*/
+}
+
+/*Text Style*/
+h1{ /*"resume" and "Hey There!"*/
+	font-size:200%; /*can do #pt or #em to change font size*/
+	font-family: forma-djr-display, sans-serif; /*Link to font: https://fonts.adobe.com/fonts/forma-djr-display#details-section+forma-djr-display-hairline*/
+  font-style: normal;
+  font-weight: 100;
+}
+
+/*header ------------------------------------------------------------------------------ */ 
+#name {
+  font-size: 200%;
+  font-family: forma-djr-display, sans-serif; /*Link to font: https://fonts.adobe.com/fonts/forma-djr-display#details-section+forma-djr-display-hairline*/
+  font-style: normal;
+  font-weight: 100;
+*/}
+
+
+  .headercontainer{ /*Contains "Grace Geer" */ 
+/*   background-color: #334251;*/
+width: 20%; /* Set the container's width*/
+display: flex; /* Use Flexbox for centering */
+justify-content: center; /* Horizontally center text */
+align-items: center; /* Vertically center text */
+}
+
+.buttoncontainer { /*Container with the buttons across the top*/
+  width: 80%;
+  height: 100%;
+  display: flex; /* Use Flexbox for centering */
+  justify-content: left; /* Horizontally center text */
+  align-items: center; /* Vertically center text */
+
+
+}
+
+/* Buttons ------------------------------------------------------------------------------ */
+
+/*Link Styling*/
+a:link {
+  color: grey;
+  text-decoration: none;
+  size: 5%;
+  font-family: helvetica, arial, sans-serif;
+  font-weight: bold;
+}
+
+a:visited {
+  color: grey;
+  text-decoration: none;
+  size: 5%;
+  font-family: helvetica, arial, sans-serif;
+}
+
+a:hover {
+  color: #008CBA;
+}
+
+#styleEmail {
+  color: grey;
+  text-decoration: none;
+  size: 5%;
+  font-family: helvetica, arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+#styleEmail:hover {
+  color: #008CBA;
+  cursor: pointer;
+}
+
+
+/* Hover Overlay Effect ------------------------------------------------------------------------------ */
+
+.container { /*Containers holding the cover images*/
+  position: relative;
+  width: 25%;
+  height: 270px;
+  display: inline-block;
+  margin: 2%;
+  min-width: 250px;
+  overflow: hidden; /* Hide any content that exceeds the container */
+  border-radius: 20px;
+  box-shadow: -7px 7px 7px rgba(0, 0, 0, 0.1);
+}
+
+.image { /* makes images the same size */
+	display: block;
+	width: 100%;
+	height: auto%;
+  border-radius: 20px;
+}
+
+.overlay { /*positions overlay over container and fades in over .5 seconds*/
+	position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+/*background-image: radial-gradient(rgb(51, 66, 81, .80) 10%, rgb(51, 66, 81) 90%);*/ /* navy */
+/*background-image: radial-gradient(rgb(255, 255, 255, .75) 10%, #d6cbbc 90%);*/ /* light*/
+background-image: radial-gradient(rgb(250, 250, 250, .8) 10%, rgb(240, 240, 240) 90%); /* white */
+}
+
+.container:hover .overlay { /* if you hover over the container, apply overlay */
+	opacity: .8; /*Overlay opacity*/
+  border-radius: 20px;
+}
+
+/* Text (project names) ------------------------------------------------------------------------------ */
+.text { /* overlay text (project names)*/
+  color: #334251; 
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  /*Import Font*/
+  font-family: "bilo ExtraLight", sans-serif;
+  font-weight: 450;
+  font-style: normal;
+}
+
+/* scroll to top feature ------------------------------------------------------------------------------ */
+#backToTop {
+  position: relative;
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+
+}
+
+#backToTop:hover {
+  background-color: #005b87;
+}
+
+
+
+
+/* Formatting 'About Me Page' ------------------------------------------------------------------------------ */
+
+#about-me-container{ /* a container for everything on the page */
+  width:100%; /*The container will try to fill the entire browser window width*/
+  /*max-width:960px; /*the maximum width the container will grow to*/
+  margin:0px; /*This line of code is the key.  0px margin top and bottom, auto margin left and right to center*/
+  padding:0px;
+
+  box-sizing:border-box;/*Makes it so that padding does not add to a box's total width*/
+
+  display:flex;
+  flex-wrap:wrap; /*wrap, nowrap, wrap-reverse*/
+  flex-direction:row; /*row, row-reverse, column, column-reverse*/
+  align-content:flex-start; /*flex-start, flex-end, center, stretch, space-between, space around*/
+  align-items:stretch; /*flex-end, center, stretch, baseline*/
+/*  background-color: teal;*/
+/*  background: linear-gradient(to bottom, #cccca833 0%, #e1e1c833 90%, #00000000 100%);*/ /*slightly yellow but looks bad here*/
+}
+
+.portrait { /*Formats the image of me*/
+  width: 40%; /* Set the container's width*/
+  margin-left: 4%;
+  display: flex; /* Use Flexbox for centering */
+  justify-content: center; /* Horizontally center text */
+  align-items: center; /* Vertically center text */
+  margin-bottom: 5%;
+}
+
+.i-messed-up-my-flexboxes { /* A container for only the header and text */
+ width:50%; 
+ margin:0px; 
+ padding:0px;
+ box-sizing:border-box;
+ display:flex;
+ flex-wrap:wrap; 
+ flex-direction:column; 
+ align-content:flex-start; 
+ align-items:stretch; 
+/* background-color: orange;*/
+}
+
+/* Positions the paragraphs (About Me) */
+.about-me-text {
+  width: 80%;
+  margin-left: 15%;
+  height: 90%;
+  justify-content: left; /* Horizontally center text */
+  font-size: 16px;
+  line-height: 160%;
+  text-indent: 25px;
+/*  background-color: blue;*/
+}
+
+
+.about-me-title { /*Positions the title (About Me) */
+  width: 48%;
+  margin-left: 4%;
+  margin-right: 4%;
+  height: 10%;
+  display: flex; /* Use Flexbox for centering */
+  justify-content: left; /* Horizontally center text */
+  align-items: center; /* Vertically center text */
+/*  background-color: cyan;*/
+}
+
+
+/*Formatting 'Contact' page ------------------------------------------------------------------------------ */
+.contact-images-container{
+  display:flex;
+  width:80%; 
+  margin:auto; 
+  padding:10px;
+  box-sizing:border-box;
+  justify-content: center;
+  align-items: center;
+/*  background-color: red;*/
+
+}
+
+.contact-info{
+  flex: 1; /* Each element takes up an equal amount of space */
+  padding: 20px; /* Example padding */
+  margin: 10px; /* Optional: adds margin around each box */
+  text-align: center; /* Centers the text within the box */
+  margin-top: 17vh;
+}
+
+.contact-image { /* Centers images in container*/
+  justify-content: center; /* Horizontally center text */
+  align-items: center; /* Vertically center text */
+  margin: 2%;
+
+  font-family: forma-djr-display, sans-serif; 
+  font-style: normal;
+  font-weight: 100;
+/*  background-color: beige;*/
+}
+
+/*copy/paste email button------------------------------------------------------------------------------ */
+
+.notification {
+  display: none;
+  position: fixed;
+  bottom: 5vh;
+  right: 5vh;
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.notification.show {
+  display: block;
+}
+
+#vertical-align{
+  transform: translateY(6px);
+}
+#center{
+  margin: auto;
+  box-sizing: border-box;
+  margin: 0;
+
+  color: grey;
+  text-decoration: none;
+  size: 5%;
+  font-family: helvetica, arial, sans-serif;
+  font-weight: bold;
+
+}
