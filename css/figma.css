@@ -103,7 +103,8 @@ h1{ /*Project Titles*/
   font-family: forma-djr-display, sans-serif; /*Link to font: https://fonts.adobe.com/fonts/forma-djr-display#details-section+forma-djr-display-hairline*/
   font-style: normal;
   font-weight: 100;
-  margin-left: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
 /*  text-align: center;*/
 }
 
@@ -112,7 +113,8 @@ h2{ /*Project Titles*/
   font-family: forma-djr-display, sans-serif; /*Link to font: https://fonts.adobe.com/fonts/forma-djr-display#details-section+forma-djr-display-hairline*/
   font-style: normal;
   font-weight: 100;
-    margin-left: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
 /*    text-align: center;*/
 }
 
@@ -122,7 +124,8 @@ p {
   font-style: normal;
   font-weight: 100;
   line-height: 150%;
-  margin: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
   padding: 2%;
 }
 
