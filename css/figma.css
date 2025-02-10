@@ -54,6 +54,7 @@ Grey is just color:  grey;
   align-items: center; /* Vertically center text */
 }
 
+
 .buttoncontainer { /*Contains buttons, or links is what they are I suppose*/
   width: 80%;
   height: 100%;
@@ -128,6 +129,7 @@ p {
   margin-right: 10%;
   padding: 2%;
 }
+
 
 #centerImages{
   display: flex;
