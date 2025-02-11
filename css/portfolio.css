@@ -111,6 +111,7 @@ h1{ /*"resume" and "Hey There!"*/
   font-family: forma-djr-display, sans-serif; /*Link to font: https://fonts.adobe.com/fonts/forma-djr-display#details-section+forma-djr-display-hairline*/
   font-style: normal;
   font-weight: 100;
+  min-width: 170px;
 */}
 
 
@@ -182,6 +183,7 @@ a:hover {
   overflow: hidden; /* Hide any content that exceeds the container */
   border-radius: 20px;
   box-shadow: -7px 7px 7px rgba(0, 0, 0, 0.1);
+  min-width: 270px;
 
 }
 
