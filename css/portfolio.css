@@ -171,6 +171,7 @@ a:hover {
 
 /* Hover Overlay Effect ------------------------------------------------------------------------------ */
 
+
 .container { /*Containers holding the cover images*/
   position: relative;
   width: 25%;
@@ -181,6 +182,7 @@ a:hover {
   overflow: hidden; /* Hide any content that exceeds the container */
   border-radius: 20px;
   box-shadow: -7px 7px 7px rgba(0, 0, 0, 0.1);
+
 }
 
 .image { /* makes images the same size */
@@ -188,6 +190,8 @@ a:hover {
 	width: 100%;
 	height: auto%;
   border-radius: 20px;
+  object-fit: cover;
+  width: 100%; height: 100%; object-fit: cover;
 }
 
 .overlay { /*positions overlay over container and fades in over .5 seconds*/
