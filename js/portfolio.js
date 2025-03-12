@@ -26,4 +26,3 @@ function scrollToTop(scrollDuration) {
 
 //Copy email function
 
- 

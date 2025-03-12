@@ -213,6 +213,20 @@ p {
   background-color: #005b87;
 }
 
+#seeMore {
+  position: relative;
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 30%;
+}
+
+#seeMore:hover {
+  background-color: #005b87;
+}
 
 
 
